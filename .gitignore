@@ -1,0 +1,151 @@
+# Environment Variables and Secrets
+.env
+.env.local
+.env.*.local
+*.env
+env_vars.txt
+
+# Snowflake Keys and Credentials
+snowflake_key.pem
+snowflake_key.pub
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.python-version
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# Logs and Reports
+logs/
+*.log
+log.txt
+upload_report*.json
+dry_run_report*.json
+audience_mapping*.csv
+upload_progress.json
+
+# Test Files and Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+tmp/
+temp/
+
+# Output Files
+output/
+results/
+exports/
+downloads/
+
+# Snowflake Cache
+.snowflake/
+snowflake_cache/
+
+# Meta/Facebook SDK
+facebook_sdk_cache/
+.fb_cache/
+
+# OS Files
+Desktop.ini
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+
+# Project Specific - Keep these files
+# !requirements.txt
+# !README.md
+# !env_template.txt
+# !*.py (except test files that should be ignored)
+
+# Test outputs
+test_*.json
+test_*.csv
+quick_test_*.txt
+
+# Sensitive data files
+user_data/
+audiences/
+maids/
+*.maid
+*.audience
+
+# Backup files
+backup/
+backups/
+*.backup
+
+# Config files with sensitive data (but keep templates)
+config.ini
+config.yaml
+config.json
+!config.py  # Keep the Python config module
+!*_template.*  # Keep all template files

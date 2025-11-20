@@ -1,0 +1,25 @@
+# Meta API Configuration
+META_ACCESS_TOKEN=your_meta_access_token_here
+META_AD_ACCOUNT_ID=your_ad_account_id_here
+
+# Snowflake Configuration
+SNOWFLAKE_ACCOUNT=your_account_here  
+SNOWFLAKE_USER=your_username_here
+# Option 1: Regular Password (won't work with MFA)
+# SNOWFLAKE_PASSWORD=your_password_here
+# Option 2: Programmatic Access Token (PAT) - bypasses MFA - USE THIS
+SNOWFLAKE_PAT_TOKEN=your_pat_token_here
+SNOWFLAKE_WAREHOUSE=COMPUTE_WH
+SNOWFLAKE_DATABASE=GAMING
+SNOWFLAKE_SCHEMA=PUBLIC
+SNOWFLAKE_ROLE=your_role_here
+
+# API Rate Limiting
+API_CALLS_PER_HOUR=200
+BATCH_SIZE=50000
+
+# Logging
+LOG_LEVEL=INFO
+
+# CSV Configuration
+CSV_FILE_PATH=Untitled spreadsheet - Sheet1.csv
