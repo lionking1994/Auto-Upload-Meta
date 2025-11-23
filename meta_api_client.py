@@ -241,7 +241,7 @@ class MetaAPIClient:
         """
         endpoint = f"{self.ad_account_id}/customaudiences"
         params = {
-            "fields": "id,name,description,approximate_count,delivery_status",
+            "fields": "id,name,description,time_created,time_updated",
             "limit": limit
         }
         

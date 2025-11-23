@@ -71,7 +71,7 @@ def test_meta_connection():
     url = f"https://graph.facebook.com/v18.0/{ad_account_id}/customaudiences"
     params = {
         "access_token": token,
-        "fields": "id,name,approximate_count",
+        "fields": "id,name,subtype,time_created",
         "limit": 5
     }
     

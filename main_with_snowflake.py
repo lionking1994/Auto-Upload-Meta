@@ -82,8 +82,8 @@ def upload_audience_with_maids(meta_client, snowflake_connector, audience_data):
         app_name = audience_data['original_name']  # Use original name for Snowflake query
         logger.info(f"Fetching MAIDs from Snowflake for: {app_name}")
         
-        # Get batches of MAIDs (50k per batch as per Meta limits)
-        batches = snowflake_connector.get_batch_audience_maids(app_name, batch_size=50000)
+        # Get batches of MAIDs (5M per batch for faster processing)
+        batches = snowflake_connector.get_batch_audience_maids(app_name, batch_size=5000000)
         
         if not batches:
             logger.warning(f"No MAIDs found for {app_name}")

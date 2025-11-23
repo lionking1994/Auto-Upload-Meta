@@ -166,73 +166,87 @@ class SnowflakeAudienceConnector:
             logger.error(f"Error getting count for {app_name}: {str(e)}")
             return 0
     
-    def get_batch_audience_maids(self, app_name: str, batch_size: int = 50000) -> List[List[Dict]]:
+    def get_batch_audience_maids(self, app_name: str, batch_size: int = 5000000) -> List[List[Dict]]:
         """
-        Fetch MAIDs in batches for large audiences
+        Fetch ALL MAIDs at once and then split into batches for Meta upload
+        This is MUCH faster than using OFFSET queries
         
         Args:
             app_name: The app name to query for
-            batch_size: Size of each batch (Meta's limit is typically 10k-100k)
+            batch_size: Size of each batch for Meta upload (default 5M)
             
-        Yields:
-            Batches of MAID dictionaries
+        Returns:
+            List of batches of MAID dictionaries
         """
         if not self.connection:
             self.connect()
         
         try:
+            import time
+            
             # Use the warehouse
             self.cursor.execute("USE WAREHOUSE COMPUTE_WH")
             
-            # First get total count
+            # Get total count first for logging
             total_count = self.get_audience_count(app_name)
             
             if total_count == 0:
                 logger.warning(f"No MAIDs found for {app_name}")
                 return []
             
-            logger.info(f"Fetching {total_count:,} MAIDs for {app_name} in batches of {batch_size:,}")
+            logger.info(f"Fetching ALL {total_count:,} MAIDs for {app_name} in a single query...")
             
+            # Execute single query to get ALL UNIQUE MAIDs at once - NO OFFSET!
+            query = """
+            SELECT DISTINCT DEVICE_ID_VALUE as MAID
+            FROM GAMING.PUBLIC.KOCHAVA_GAMINGAUDIENCES_TBL
+            WHERE APP_NAME_PROPER = %s
+            """
+            
+            start_time = time.time()
+            logger.info("Executing query (this matches Snowflake UI performance)...")
+            self.cursor.execute(query, (app_name,))
+            query_time = time.time() - start_time
+            logger.info(f"✓ Query executed in {query_time:.2f} seconds")
+            
+            # Fetch ALL results at once
+            logger.info("Fetching all results from cursor...")
+            fetch_start = time.time()
+            all_results = self.cursor.fetchall()
+            fetch_time = time.time() - fetch_start
+            logger.info(f"✓ Fetched {len(all_results):,} MAIDs in {fetch_time:.2f} seconds")
+            
+            # Convert to list of dictionaries and split into batches
+            logger.info(f"Processing MAIDs into batches of {batch_size:,} for Meta upload...")
             batches = []
-            offset = 0
+            current_batch = []
             
-            while offset < total_count:
-                # Use warehouse for each batch query
-                self.cursor.execute("USE WAREHOUSE COMPUTE_WH")
-                
-                query = f"""
-                SELECT DEVICE_ID_VALUE as MAID
-                FROM GAMING.PUBLIC.KOCHAVA_GAMINGAUDIENCES_TBL
-                WHERE APP_NAME_PROPER = %s
-                ORDER BY DEVICE_ID_VALUE
-                LIMIT {batch_size}
-                OFFSET {offset}
-                """
-                
-                self.cursor.execute(query, (app_name,))
-                results = self.cursor.fetchall()
-                
-                if not results:
-                    break
-                
-                # Convert batch to list of dictionaries
-                batch = []
-                for row in results:
-                    if row[0]:  # Check if MAID is not null
-                        batch.append({
-                            'madid': row[0]
-                        })
-                
-                if batch:
-                    batches.append(batch)
-                    logger.info(f"Fetched batch {len(batches)} ({len(batch)} MAIDs) for {app_name}")
-                
-                offset += batch_size
+            for row in all_results:
+                if row[0]:  # Check if MAID is not null
+                    current_batch.append({
+                        'madid': row[0]
+                    })
+                    
+                    # When batch is full, add it to batches list
+                    if len(current_batch) >= batch_size:
+                        batches.append(current_batch)
+                        logger.info(f"Created batch {len(batches)} with {len(current_batch):,} MAIDs")
+                        current_batch = []
+            
+            # Add any remaining MAIDs as the last batch
+            if current_batch:
+                batches.append(current_batch)
+                logger.info(f"Created final batch {len(batches)} with {len(current_batch):,} MAIDs")
+            
+            total_time = time.time() - start_time
+            total_maids = sum(len(batch) for batch in batches)
+            logger.info(f"✓ Completed: {total_maids:,} MAIDs in {len(batches)} batches")
+            logger.info(f"Total time: {total_time:.2f} seconds ({total_maids/total_time:.0f} MAIDs/second)")
             
             return batches
             
         except Exception as e:
-            logger.error(f"Error fetching batches for {app_name}: {str(e)}")
+            logger.error(f"Error fetching MAIDs for {app_name}: {str(e)}")
             raise
     
     def test_connection(self) -> bool:
