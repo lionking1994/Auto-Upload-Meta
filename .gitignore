@@ -70,6 +70,42 @@ dry_run_report*.json
 audience_mapping*.csv
 upload_progress.json
 
+# ETL Pipeline Logs and Results
+etl_pipeline_*.log
+etl_results_*.json
+etl_progress_*.json
+full_upload_*.log
+full_etl_upload_*.log
+test_upload*.log
+optimized_upload_*.log
+large_apps_*.log
+etl_resume_*.log
+batch_upload_*.log
+
+# Audience Creation/Deletion Logs
+audience_creation_*.log
+audience_creation_*.json
+create_audiences_*.log
+deletion_*.log
+deletion_*.json
+delete_*.log
+
+# Result and Report Files
+*_results_*.json
+*_report_*.txt
+*_report_*.json
+remaining_upload_*.json
+remaining_upload_*.log
+skipped_upload_*.json
+
+# Progress Files
+progress_*.json
+checkpoint_*.json
+
+# Monitoring Files
+monitor_*.log
+monitor_*.txt
+
 # Test Files and Cache
 .pytest_cache/
 .coverage
@@ -98,6 +134,11 @@ dmypy.json
 *.old
 tmp/
 temp/
+
+# Shell Scripts (temporary monitoring scripts)
+monitor_upload.sh
+cleanup_files.sh
+*_temp.sh
 
 # Output Files
 output/

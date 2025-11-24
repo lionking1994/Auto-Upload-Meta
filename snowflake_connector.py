@@ -168,8 +168,8 @@ class SnowflakeAudienceConnector:
     
     def get_batch_audience_maids(self, app_name: str, batch_size: int = 5000000) -> List[List[Dict]]:
         """
-        Fetch ALL MAIDs at once and then split into batches for Meta upload
-        This is MUCH faster than using OFFSET queries
+        Fetch MAIDs efficiently - using chunked approach for very large datasets
+        to avoid connection timeouts
         
         Args:
             app_name: The app name to query for
@@ -194,6 +194,14 @@ class SnowflakeAudienceConnector:
                 logger.warning(f"No MAIDs found for {app_name}")
                 return []
             
+            logger.info(f"App '{app_name}' has {total_count:,} MAIDs")
+            
+            # For very large datasets (>20M), use chunked fetching to avoid timeouts
+            if total_count > 20_000_000:
+                logger.info(f"Large dataset detected ({total_count:,} MAIDs). Using chunked fetching to avoid timeouts...")
+                return self._fetch_large_dataset_chunked(app_name, total_count, batch_size)
+            
+            # For smaller datasets, fetch all at once
             logger.info(f"Fetching ALL {total_count:,} MAIDs for {app_name} in a single query...")
             
             # Execute single query to get ALL UNIQUE MAIDs at once - NO OFFSET!
@@ -247,6 +255,99 @@ class SnowflakeAudienceConnector:
             
         except Exception as e:
             logger.error(f"Error fetching MAIDs for {app_name}: {str(e)}")
+            raise
+    
+    def _fetch_large_dataset_chunked(self, app_name: str, total_count: int, batch_size: int) -> List[List[Dict]]:
+        """
+        Fetch very large datasets in chunks to avoid connection timeouts
+        Uses Snowflake's result set chunking capabilities
+        
+        Args:
+            app_name: The app name to query for
+            total_count: Total number of MAIDs expected
+            batch_size: Size of each batch for Meta upload
+            
+        Returns:
+            List of batches of MAID dictionaries
+        """
+        import time
+        
+        try:
+            batches = []
+            chunk_size = 10_000_000  # Fetch 10M records at a time from Snowflake
+            total_fetched = 0
+            
+            logger.info(f"Will fetch {total_count:,} MAIDs in chunks of {chunk_size:,} to avoid timeouts")
+            
+            # Use ORDER BY with LIMIT/OFFSET for consistent chunking
+            query = """
+            SELECT DISTINCT DEVICE_ID_VALUE as MAID
+            FROM GAMING.PUBLIC.KOCHAVA_GAMINGAUDIENCES_TBL
+            WHERE APP_NAME_PROPER = %s
+            ORDER BY DEVICE_ID_VALUE
+            LIMIT %s OFFSET %s
+            """
+            
+            while total_fetched < total_count:
+                chunk_start = time.time()
+                current_chunk_size = min(chunk_size, total_count - total_fetched)
+                
+                logger.info(f"Fetching chunk: records {total_fetched:,} to {total_fetched + current_chunk_size:,}")
+                
+                # Execute query for this chunk
+                self.cursor.execute(query, (app_name, current_chunk_size, total_fetched))
+                
+                # Fetch this chunk
+                chunk_results = self.cursor.fetchall()
+                
+                if not chunk_results:
+                    logger.warning(f"No more results at offset {total_fetched:,}")
+                    break
+                
+                # Process this chunk into batches
+                current_batch = []
+                for row in chunk_results:
+                    if row[0]:  # Check if MAID is not null
+                        current_batch.append({
+                            'madid': row[0]
+                        })
+                        
+                        # When batch is full, add it to batches list
+                        if len(current_batch) >= batch_size:
+                            batches.append(current_batch)
+                            current_batch = []
+                
+                # Add any remaining MAIDs from this chunk
+                if current_batch:
+                    # If this is the last chunk, create final batch
+                    if total_fetched + len(chunk_results) >= total_count:
+                        batches.append(current_batch)
+                        logger.info(f"Created final batch with {len(current_batch):,} MAIDs")
+                    # Otherwise, carry over to next chunk
+                    elif len(current_batch) >= batch_size * 0.8:  # If batch is 80% full, close it
+                        batches.append(current_batch)
+                        current_batch = []
+                
+                total_fetched += len(chunk_results)
+                chunk_time = time.time() - chunk_start
+                
+                logger.info(f"✓ Fetched chunk of {len(chunk_results):,} MAIDs in {chunk_time:.2f}s. Total: {total_fetched:,}/{total_count:,}")
+                
+                # Small delay between chunks to avoid overwhelming the connection
+                if total_fetched < total_count:
+                    time.sleep(1)
+            
+            total_maids = sum(len(batch) for batch in batches)
+            logger.info(f"✓ Completed chunked fetch: {total_maids:,} MAIDs in {len(batches)} batches")
+            
+            return batches
+            
+        except Exception as e:
+            logger.error(f"Error in chunked fetch: {str(e)}")
+            # Try to return what we have so far
+            if batches:
+                logger.warning(f"Returning {len(batches)} batches fetched before error")
+                return batches
             raise
     
     def test_connection(self) -> bool:
