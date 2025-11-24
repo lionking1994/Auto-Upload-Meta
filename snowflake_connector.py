@@ -81,6 +81,10 @@ class SnowflakeAudienceConnector:
             self.connection.close()
         logger.info("Disconnected from Snowflake")
     
+    def close(self):
+        """Alias for disconnect() to match common connection patterns"""
+        self.disconnect()
+    
     def get_audience_maids(self, app_name: str, limit: Optional[int] = None) -> List[Dict]:
         """
         Fetch MAIDs (Mobile Advertising IDs) for a specific app
