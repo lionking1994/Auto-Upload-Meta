@@ -1,0 +1,1396 @@
+{
+  "summary": {
+    "total_expected_audiences": 155,
+    "audiences_found": 153,
+    "audiences_missing": 1,
+    "audiences_with_maids": 0,
+    "audiences_without_maids": 153,
+    "total_estimated_maids": 0
+  },
+  "audiences": [
+    {
+      "audience_name": "US_Android_Dice Puzzle Merge puzzle_PIE",
+      "audience_id": "6962852211435",
+      "app_name": "Dice Puzzle - Merge puzzle",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Chain Cube 2048 3D merge game_PIE",
+      "audience_id": "6962750648635",
+      "app_name": "Chain Cube: 2048 3D merge game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Merge Dragons_PIE",
+      "audience_id": "6962750630835",
+      "app_name": "Merge Dragons!",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Merge Number Puzzle_PIE",
+      "audience_id": "6962750600835",
+      "app_name": "Merge Number Puzzle",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_GoogleTV_Merge Truck Monster Truck Evolution Merger game_PIE",
+      "audience_id": "6962750492835",
+      "app_name": "Merge Truck: Monster Truck Evolution Merger game",
+      "os": "GoogleTV",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Merge Sandwich Happy Club Sandwich Restaurant_PIE",
+      "audience_id": "6962750173835",
+      "app_name": "Merge Sandwich: Happy Club Sandwich Restaurant",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_X2 Blocks Merge Puzzle 2048_PIE",
+      "audience_id": "6962749909235",
+      "app_name": "X2 Blocks - Merge Puzzle 2048",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Drop The Number Merge Puzzle_PIE",
+      "audience_id": "6962749495035",
+      "app_name": "Drop The Number : Merge Puzzle",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Merge Muscle Car Classic American Muscle Merger_PIE",
+      "audience_id": "6962748819435",
+      "app_name": "Merge Muscle Car: Classic American Muscle Merger",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Merge Mania_PIE",
+      "audience_id": "6962748085235",
+      "app_name": "Merge Mania",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Merge Battle Car Best Idle Clicker Tycoon game_PIE",
+      "audience_id": "6962746798235",
+      "app_name": "Merge Battle Car: Best Idle Clicker Tycoon game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Tile Connect MasterBlock Match Puzzle Game_PIE",
+      "audience_id": "6962746346235",
+      "app_name": "Tile Connect Master:Block Match Puzzle Game",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Match Triple 3D Matching Tile_PIE",
+      "audience_id": "6962745977835",
+      "app_name": "Match Triple 3D: Matching Tile",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Match Tile 3D_PIE",
+      "audience_id": "6962745155035",
+      "app_name": "Match Tile 3D",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Number Match Logic Puzzle Game_PIE",
+      "audience_id": "6962743279835",
+      "app_name": "Number Match - Logic Puzzle Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Jewel Pop ManiaMatch 3 Puzzle_PIE",
+      "audience_id": "6962743234635",
+      "app_name": "Jewel Pop Mania:Match 3 Puzzle",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Clockmaker Match Three Games_PIE",
+      "audience_id": "6962743078835",
+      "app_name": "Clockmaker: Match Three Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Tile Triple 3D Match Master_PIE",
+      "audience_id": "6962742951635",
+      "app_name": "Tile Triple 3D - Match Master",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Clockmaker Amazing Match 3_PIE",
+      "audience_id": "6962742672635",
+      "app_name": "Clockmaker - Amazing Match 3",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_3 Tiles Puzzle Match Game_PIE",
+      "audience_id": "6962742249435",
+      "app_name": "3 Tiles - Puzzle Match Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Match 3D Matching Puzzle Game_PIE",
+      "audience_id": "6962741680235",
+      "app_name": "Match 3D - Matching Puzzle Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Mahjong Triple 3D Tile Match Master_PIE",
+      "audience_id": "6962741201035",
+      "app_name": "Mahjong Triple 3D - Tile Match Master",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Onnect Pair Matching Puzzle_PIE",
+      "audience_id": "6962740377635",
+      "app_name": "Onnect \u2013 Pair Matching Puzzle",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Jewels Planet Free Match 3 and Puzzle Game_PIE",
+      "audience_id": "6962738295235",
+      "app_name": "Jewels Planet - Free Match 3 & Puzzle Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Jewel Fever Match 3 Games_PIE",
+      "audience_id": "6962737210035",
+      "app_name": "Jewel Fever - Match 3 Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Tile Master 3D Classic Puzzle and Triple Match_PIE",
+      "audience_id": "6962736723435",
+      "app_name": "Tile Master 3D - Classic Puzzle & Triple Match",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Cube Master 3D Match 3 and Puzzle Game_PIE",
+      "audience_id": "6962735228635",
+      "app_name": "Cube Master 3D - Match 3 & Puzzle Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Party Match_PIE",
+      "audience_id": "6962733321635",
+      "app_name": "Party Match",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Match 3D_PIE",
+      "audience_id": "6962723861435",
+      "app_name": "Match 3D",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Find 3D Match Items_PIE",
+      "audience_id": "6962715348035",
+      "app_name": "Find 3D - Match Items",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Tile Master 3D Classic Match_PIE",
+      "audience_id": "6962714047235",
+      "app_name": "Tile Master 3D - Classic Match",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Onet Connect and Match Puzzle_PIE",
+      "audience_id": "6962713956635",
+      "app_name": "Onet - Connect & Match Puzzle",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Tile Master Classic Triple Match and Puzzle Game_PIE",
+      "audience_id": "6962712197235",
+      "app_name": "Tile Master - Classic Triple Match & Puzzle Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_cashKarma Rewards and Gift Cards_PIE",
+      "audience_id": "6962712123235",
+      "app_name": "cashKarma Rewards & Gift Cards",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Cashzine Buzz Interact and Get Reward Daily_PIE",
+      "audience_id": "6962712095235",
+      "app_name": "Cashzine: Buzz Interact & Get Reward Daily",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_S\u2019more Earn Cash Rewards_PIE",
+      "audience_id": "6962712034835",
+      "app_name": "S\u2019more - Earn Cash Rewards",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_\u22c6Spider Solitaire_PIE",
+      "audience_id": "6962711670435",
+      "app_name": "\u22c6Spider Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire TriPeaks_PIE",
+      "audience_id": "6962710984835",
+      "app_name": "Solitaire TriPeaks",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_FreeCell Solitaire_PIE",
+      "audience_id": "6962710439835",
+      "app_name": "FreeCell Solitaire",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Free Classic Solitaire Card Games_PIE",
+      "audience_id": "6962710020035",
+      "app_name": "Solitaire - Free Classic Solitaire Card Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Mania_PIE",
+      "audience_id": "6962709397435",
+      "app_name": "Solitaire Mania",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Mahjong Solitaire Classic_PIE",
+      "audience_id": "6962708417035",
+      "app_name": "Mahjong Solitaire: Classic",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_FreeCell Solitaire Card Game_PIE",
+      "audience_id": "6962706919435",
+      "app_name": "FreeCell Solitaire Card Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Spider Solitaire Card Game_PIE",
+      "audience_id": "6962706616435",
+      "app_name": "Spider Solitaire: Card Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Spider Solitaire_PIE",
+      "audience_id": "6962706257435",
+      "app_name": "Spider Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Classic Card Game Klondike and Patience_PIE",
+      "audience_id": "6962705435635",
+      "app_name": "Solitaire - Classic Card Game Klondike & Patience",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Classic_PIE",
+      "audience_id": "6962703278235",
+      "app_name": "Solitaire Classic",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Aces Up Solitaire \u00b7_PIE",
+      "audience_id": "6962702182235",
+      "app_name": "Aces Up Solitaire \u00b7",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Mahjong Solitaire_PIE",
+      "audience_id": "6962702068835",
+      "app_name": "Mahjong Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Solitaire A Classic Card Game_PIE",
+      "audience_id": "6962701393835",
+      "app_name": "Solitaire - A Classic Card Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Card Games Classic_PIE",
+      "audience_id": "6962700583235",
+      "app_name": "Solitaire: Card Games Classic",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Pyramid Solitaire_PIE",
+      "audience_id": "6962689112435",
+      "app_name": "Pyramid Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Classic Solitaire_PIE",
+      "audience_id": "6962687686635",
+      "app_name": "Classic Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire Classic Card Game._PIE",
+      "audience_id": "6962686685435",
+      "app_name": "Solitaire \u2013 Classic Card Game.",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Solitaire_PIE",
+      "audience_id": "6962683772235",
+      "app_name": "Solitaire",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Dice With Buddies Free The Fun Social Dice Game_PIE",
+      "audience_id": "6962681064835",
+      "app_name": "Dice With Buddies\u2122 Free - The Fun Social Dice Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Dice Dreams\ufe0f_PIE",
+      "audience_id": "6962680529035",
+      "app_name": "Dice Dreams\u2122\ufe0f",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Ludo Party Dice Board Game_PIE",
+      "audience_id": "6962680111235",
+      "app_name": "Ludo Party : Dice Board Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_YatzyFree social dice game_PIE",
+      "audience_id": "6962679739635",
+      "app_name": "Yatzy-Free social dice game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Yazy the best yatzy dice game_PIE",
+      "audience_id": "6962667122835",
+      "app_name": "Yazy the best yatzy dice game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Dice With Buddies Dice Game_PIE",
+      "audience_id": "6962666465835",
+      "app_name": "Dice With Buddies: Dice Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Age of Coins War Master_PIE",
+      "audience_id": "6962666226235",
+      "app_name": "Age of Coins: War Master",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Coin Rush_PIE",
+      "audience_id": "6962665939835",
+      "app_name": "Coin Rush!",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Coin Master_PIE",
+      "audience_id": "6962665554835",
+      "app_name": "Coin Master",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Time Master Coin Adventure_PIE",
+      "audience_id": "6962665362835",
+      "app_name": "Time Master - Coin Adventure",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Coin Dozer_PIE",
+      "audience_id": "6962665047235",
+      "app_name": "Coin Dozer",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Island King Coin Adventure_PIE",
+      "audience_id": "6962664625035",
+      "app_name": "Island King - Coin Adventure",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Coin Dozer Free Prizes_PIE",
+      "audience_id": "6962664292035",
+      "app_name": "Coin Dozer - Free Prizes",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cool Match Game Coinnect Earn Real Rewards_PIE",
+      "audience_id": "6962663941035",
+      "app_name": "Cool Match Game: Coinnect\u2122 Earn Real Rewards",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_COIN Always Be Earning_PIE",
+      "audience_id": "6962663364035",
+      "app_name": "COIN: Always Be Earning",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Piggy GO Clash of Coin_PIE",
+      "audience_id": "6962661123835",
+      "app_name": "Piggy GO - Clash of Coin",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_COIN_PIE",
+      "audience_id": "6962660226435",
+      "app_name": "COIN",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Game of Coinball_PIE",
+      "audience_id": "6962659051235",
+      "app_name": "Game of Coinball",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Coin Dozer Casino_PIE",
+      "audience_id": "6962658685835",
+      "app_name": "Coin Dozer: Casino",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Video Poker Multi Pro Casino_PIE",
+      "audience_id": "6962658408235",
+      "app_name": "Video Poker Multi Pro Casino",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Mega Hit Poker Texas Holdem_PIE",
+      "audience_id": "6962658181035",
+      "app_name": "Mega Hit Poker: Texas Holdem",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Svara 3 Card Poker Online Card Game_PIE",
+      "audience_id": "6962658050235",
+      "app_name": "Svara - 3 Card Poker Online Card Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_VIDEO POKER OFFLINE FREE_PIE",
+      "audience_id": "6962657522235",
+      "app_name": "VIDEO POKER OFFLINE FREE!",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Video Poker Deluxe Casino_PIE",
+      "audience_id": "6962655522035",
+      "app_name": "Video Poker Deluxe Casino",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Poker Championship Holdem_PIE",
+      "audience_id": "6962653272635",
+      "app_name": "Poker Championship - Holdem",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Governor of Poker 3 Online_PIE",
+      "audience_id": "6962653035435",
+      "app_name": "Governor of Poker 3 -  Online",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_DH Texas Poker Texas Hold'em_PIE",
+      "audience_id": "6962652554035",
+      "app_name": "DH Texas Poker - Texas Hold'em",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Vegas Craps by Pokerist_PIE",
+      "audience_id": "6962651832035",
+      "app_name": "Vegas Craps by Pokerist",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Ultimate X Poker Video Poker_PIE",
+      "audience_id": "6962650256835",
+      "app_name": "Ultimate X Poker\u2122 - Video Poker",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Scatter HoldEm Poker Texas Holdem Online Poker_PIE",
+      "audience_id": "6962649477835",
+      "app_name": "Scatter HoldEm Poker - Texas Holdem Online Poker",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Video Poker Classic Free_PIE",
+      "audience_id": "6962649201635",
+      "app_name": "Video Poker Classic Free",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Texas Holdem Poker Pokerist_PIE",
+      "audience_id": "6962648914435",
+      "app_name": "Texas Holdem Poker: Pokerist",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Video Poker by Pokerist_PIE",
+      "audience_id": "6962648675035",
+      "app_name": "Video Poker by Pokerist",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Poker Live_PIE",
+      "audience_id": "6962648426635",
+      "app_name": "Poker Live",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Poker Championship online_PIE",
+      "audience_id": "6962648169035",
+      "app_name": "Poker Championship online",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_MONOPOLY Poker The Official Texas Holdem Online_PIE",
+      "audience_id": "6962647955035",
+      "app_name": "MONOPOLY Poker - The Official Texas Holdem Online",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Texas Holdem and Omaha Poker Pokerist_PIE",
+      "audience_id": "6962647782835",
+      "app_name": "Texas Holdem & Omaha Poker: Pokerist",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Apple TV Software_Poker Offline Free Texas Holdem Poker Games_PIE",
+      "audience_id": "6962647429035",
+      "app_name": "Poker Offline - Free Texas Holdem Poker Games",
+      "os": "Apple TV Software",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Governor of Poker 3 Texas Holdem Poker Online_PIE",
+      "audience_id": "6962646560235",
+      "app_name": "Governor of Poker 3 - Texas Holdem Poker Online",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Mega Hit Poker Texas Holdem massive tournament_PIE",
+      "audience_id": "6962645866235",
+      "app_name": "Mega Hit Poker: Texas Holdem massive tournament",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Video Poker Deluxe_PIE",
+      "audience_id": "6962645303235",
+      "app_name": "Video Poker Deluxe",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Holdem or Foldem Poker Texas Holdem_PIE",
+      "audience_id": "6962645100835",
+      "app_name": "Holdem or Foldem - Poker Texas Holdem",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Solitaire Poker Games_PIE",
+      "audience_id": "6962644804835",
+      "app_name": "Solitaire Poker Games",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Zynga Poker Texas Holdem_PIE",
+      "audience_id": "6962644459235",
+      "app_name": "Zynga Poker \u2013 Texas Holdem",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Slots Era Best Online Casino Slots Machines_PIE",
+      "audience_id": "6962644349035",
+      "app_name": "Slots Era: Best Online Casino Slots Machines",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Classic Slots Vegas Casino_PIE",
+      "audience_id": "6962644160235",
+      "app_name": "Classic Slots\u2122: Vegas Casino",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Jackpot Boom Free Slots Spin Vegas Casino Games_PIE",
+      "audience_id": "6962644050835",
+      "app_name": "Jackpot Boom Free Slots : Spin Vegas Casino Games",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_my KONAMI Slots Free Vegas Casino Slot Machines_PIE",
+      "audience_id": "6962643871635",
+      "app_name": "my KONAMI Slots - Free Vegas Casino Slot Machines",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Slots Billionaire Free Casino Slot Games_PIE",
+      "audience_id": "6962643714235",
+      "app_name": "Slots Billionaire - Free Casino Slot Games!",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_POP Slots Free Vegas Casino Slot Machine Games_PIE",
+      "audience_id": "6962643558435",
+      "app_name": "POP! Slots - Free Vegas Casino Slot Machine Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Slotsmash Casino Slot Games_PIE",
+      "audience_id": "6962643442635",
+      "app_name": "Slotsmash - Casino Slot Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Lightning Link Casino Free Slots Games_PIE",
+      "audience_id": "6962643238435",
+      "app_name": "Lightning Link Casino \u2013 Free Slots Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Jackpot Mania Casino Slots_PIE",
+      "audience_id": "6962643123835",
+      "app_name": "Jackpot Mania\u2122 - Casino Slots",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Double Win Slots Casino Game_PIE",
+      "audience_id": "6962642970235",
+      "app_name": "Double Win Slots Casino Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Heart of Vegas Slots Free Slot Casino Games_PIE",
+      "audience_id": "6962642752835",
+      "app_name": "Heart of Vegas\u2122 Slots \u2013 Free Slot Casino Games",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Coin Dozer Casino_PIE",
+      "audience_id": "6962642469635",
+      "app_name": "Coin Dozer: Casino",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Classic Slots Free Casino Slot Games_PIE",
+      "audience_id": "6962642041235",
+      "app_name": "Classic Slots - Free Casino Slot Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Big Fish Casino Play Slots and Vegas Games_PIE",
+      "audience_id": "6962641668035",
+      "app_name": "Big Fish Casino \u2013 Play Slots & Vegas Games",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Golden Casino Best Free Slot Machines Games_PIE",
+      "audience_id": "6962641186035",
+      "app_name": "Golden Casino - Best Free Slot Machines  Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Huge Win Slots Las Vegas Casino Free Spin to 777_PIE",
+      "audience_id": "6962640765835",
+      "app_name": "Huge Win Slots: Las Vegas Casino Free Spin to 777",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_my KONAMI Slots Casino Slots_PIE",
+      "audience_id": "6962640362035",
+      "app_name": "my KONAMI Slots \u2013 Casino Slots",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Slots casino slot machines free_PIE",
+      "audience_id": "6962639895435",
+      "app_name": "Slots - casino slot machines free",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Game of Thrones Slots Casino Slot Machine Games_PIE",
+      "audience_id": "6962638922235",
+      "app_name": "Game of Thrones Slots Casino - Slot Machine Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Weed Inc Idle Cash_PIE",
+      "audience_id": "6962638541435",
+      "app_name": "Weed Inc: Idle Cash",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Cash Hoard Slots\uff01Real Las Vegas Casino Slots Game_PIE",
+      "audience_id": "6962638233635",
+      "app_name": "Cash Hoard Slots\uff01Real Las Vegas Casino Slots Game",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cash Tornado Slots Casino_PIE",
+      "audience_id": "6962637891635",
+      "app_name": "Cash Tornado Slots - Casino",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Words to Win Cash Giveaway_PIE",
+      "audience_id": "6962637455035",
+      "app_name": "Words to Win: Cash Giveaway",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cash Frenzy Casino Free Slots Games_PIE",
+      "audience_id": "6962636406435",
+      "app_name": "Cash Frenzy\u2122 Casino \u2013 Free Slots Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_PCH Lotto Real Cash Jackpots_PIE",
+      "audience_id": "6962635369235",
+      "app_name": "PCH Lotto - Real Cash Jackpots",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Play To Win Win Real Money in Cash Sweepstakes_PIE",
+      "audience_id": "6962632880035",
+      "app_name": "Play To Win: Win Real Money in Cash Sweepstakes",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Rock N' Cash Casino Slots Free Vegas Slot Machine_PIE",
+      "audience_id": "6962631210835",
+      "app_name": "Rock N' Cash Casino Slots -Free Vegas Slot Machine",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cash Inc. Fame and Fortune Game_PIE",
+      "audience_id": "6962630443635",
+      "app_name": "Cash Inc. Fame & Fortune Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Cash Bash Casino Free Slots Games_PIE",
+      "audience_id": "6962630001235",
+      "app_name": "Cash Bash Casino - Free Slots Games",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_GoogleTV_Cash Frenzy Slots Casino_PIE",
+      "audience_id": "6962629423035",
+      "app_name": "Cash Frenzy\u2122 - Slots Casino",
+      "os": "GoogleTV",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cashman Casino Las Vegas Slots_PIE",
+      "audience_id": "6962628897635",
+      "app_name": "Cashman Casino Las Vegas Slots",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Solitaire Cash_PIE",
+      "audience_id": "6962628522035",
+      "app_name": "Solitaire Cash",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Pocket7Games Play for Cash_PIE",
+      "audience_id": "6962628193835",
+      "app_name": "Pocket7Games: Play for Cash",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Cash Tornado Slots Vegas Casino Slots_PIE",
+      "audience_id": "6962627679235",
+      "app_name": "Cash Tornado Slots - Vegas Casino Slots",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cashier in the supermarket. Games for kids_PIE",
+      "audience_id": "6962627015635",
+      "app_name": "Cashier in the supermarket. Games for kids",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Play and Win Win Cash Prizes_PIE",
+      "audience_id": "6962626284835",
+      "app_name": "Play and Win - Win Cash Prizes!",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Grand Cash Slots Free Casino Game_PIE",
+      "audience_id": "6962625698835",
+      "app_name": "Grand Cash Slots: Free Casino Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cash Book_PIE",
+      "audience_id": "6962625038035",
+      "app_name": "Cash Book",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo WildFree BINGO Games Online Fun Bingo Game_PIE",
+      "audience_id": "6962624692435",
+      "app_name": "Bingo Wild-Free BINGO Games Online: Fun Bingo Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Bingo Country Days_PIE",
+      "audience_id": "6962623748235",
+      "app_name": "Bingo Country Days",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo Free Bingo Games_PIE",
+      "audience_id": "6962623178035",
+      "app_name": "Bingo! Free Bingo Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Bingo Classic Game Offline Free_PIE",
+      "audience_id": "6962622782235",
+      "app_name": "Bingo Classic Game - Offline Free",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Bingo Bash Bingo and Slots_PIE",
+      "audience_id": "6962622100235",
+      "app_name": "Bingo Bash: Bingo & Slots",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo Frenzy Bingo caller Bingo games for free_PIE",
+      "audience_id": "6962621811835",
+      "app_name": "Bingo Frenzy: Bingo caller Bingo games for free",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iPadOS_Money Bingo Win Rewards and Huge Cash Out_PIE",
+      "audience_id": "6962621623235",
+      "app_name": "Money Bingo - Win Rewards & Huge Cash Out!",
+      "os": "iPadOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_GoogleTV_Bingo Scapes Lucky Bingo Game Free to Play_PIE",
+      "audience_id": "6962621429635",
+      "app_name": "Bingo Scapes - Lucky Bingo Game Free to Play",
+      "os": "GoogleTV",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo Party Free Bingo Games_PIE",
+      "audience_id": "6962620424235",
+      "app_name": "Bingo Party - Free Bingo Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_Bingo Clash win real cash_PIE",
+      "audience_id": "6962620231435",
+      "app_name": "Bingo Clash: win real cash",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo Bash Bingo and Slots_PIE",
+      "audience_id": "6962619979035",
+      "app_name": "Bingo Bash - Bingo & Slots",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_iOS_BINGO_PIE",
+      "audience_id": "6962619742835",
+      "app_name": "BINGO!",
+      "os": "iOS",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Word Bingo Fun Word Game_PIE",
+      "audience_id": "6962619331235",
+      "app_name": "Word Bingo - Fun Word Game",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Bingo Quest Summer Garden Adventure_PIE",
+      "audience_id": "6962617765835",
+      "app_name": "Bingo Quest - Summer Garden Adventure",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Scatter Slots Free Casino Slot Machines Online_PIE",
+      "audience_id": "6962594986035",
+      "app_name": "Scatter Slots: Free Casino Slot Machines Online",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    },
+    {
+      "audience_name": "US_Android_Cashman Casino Free Slots Machines and Vegas Games_PIE",
+      "audience_id": "6962582136435",
+      "app_name": "Cashman Casino - Free Slots Machines & Vegas Games",
+      "os": "Android",
+      "estimated_maids": 0,
+      "lower_bound": 0,
+      "upper_bound": 0
+    }
+  ],
+  "missing_audiences": [
+    {
+      "audience_name": "US_Android_CoinGecko\u00a0 Bitcoin and Cryptocurrency Tracker_PIE",
+      "app_name": "CoinGecko\u00a0- Bitcoin & Cryptocurrency Tracker",
+      "os": "Android"
+    }
+  ]
+}

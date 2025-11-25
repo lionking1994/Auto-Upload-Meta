@@ -9,11 +9,12 @@ import json
 import time
 import logging
 import argparse
+import gc  # For garbage collection
 from pathlib import Path
 from typing import List, Dict, Optional
 from datetime import datetime
 
-from meta_api_client_optimized import OptimizedMetaAPIClient
+from meta_api_client_resilient import ResilientMetaAPIClient
 from snowflake_connector import SnowflakeAudienceConnector
 
 # Configure logging
@@ -89,9 +90,9 @@ def read_apps_from_csv(csv_path: str) -> List[Dict[str, str]]:
 
 def upload_app_audience_optimized(
     app_data: Dict[str, str],
-    meta_client: OptimizedMetaAPIClient,
+    meta_client: ResilientMetaAPIClient,
     snowflake: SnowflakeAudienceConnector,
-    batch_size: int = 100000,  # Conservative batch size for Meta API
+    batch_size: int = 25000,  # Smaller batch size to avoid timeouts
     skip_existing: bool = True
 ) -> Dict:
     """
@@ -218,25 +219,34 @@ def upload_app_audience_optimized(
                 meta_batch = sf_batch[i:i + batch_size]
                 
                 try:
-                    # Use optimized batch upload
-                    upload_response = meta_client.add_users_to_audience_batch(
+                    # Use resilient batch upload with retry and timeout
+                    upload_response = meta_client.add_users_batch_with_retry(
                         audience_id=audience_id,
                         users=meta_batch,
                         schema=['MADID'],
                         is_hashed=False,
-                        optimized_batch_size=batch_size
+                        max_retries=3,
+                        batch_timeout=60  # 60 seconds timeout per batch
                     )
                     
-                    if upload_response.get('users_uploaded'):
-                        batch_uploaded += upload_response['users_uploaded']
-                        total_uploaded += upload_response['users_uploaded']
+                    if upload_response.get('success'):
+                        batch_uploaded += upload_response.get('users_uploaded', len(meta_batch))
+                        total_uploaded += upload_response.get('users_uploaded', len(meta_batch))
                         
-                        # Progress update every 500K records
-                        if total_uploaded % 500000 == 0:
-                            logger.info(f"  Progress: {total_uploaded:,}/{total_maids_fetched:,} MAIDs uploaded")
+                        # Progress update every 100K records
+                        if total_uploaded % 100000 == 0:
+                            elapsed = time.time() - upload_start
+                            speed = total_uploaded / elapsed if elapsed > 0 else 0
+                            logger.info(f"  Progress: {total_uploaded:,}/{total_maids_fetched:,} MAIDs uploaded (Speed: {speed:.0f} MAIDs/s)")
+                    else:
+                        logger.warning(f"Batch upload failed: {upload_response.get('error', 'Unknown error')}")
+                        # Continue with next batch instead of failing completely
+                        continue
                 
                 except Exception as e:
                     logger.error(f"Error uploading batch: {str(e)}")
+                    # Continue with next batch
+                    continue
                     # Continue with next batch instead of failing completely
                     continue
         
@@ -308,7 +318,12 @@ def main():
     # Initialize connections
     try:
         logger.info("\nInitializing connections...")
-        meta_client = OptimizedMetaAPIClient()
+        meta_client = ResilientMetaAPIClient()
+        
+        # Test Meta API health (optional, just log warning if fails)
+        if not meta_client.health_check():
+            logger.warning("Meta API health check failed, continuing anyway...")
+            
         snowflake = SnowflakeAudienceConnector()
         snowflake.connect()
         logger.info("✓ Connections established")
@@ -357,7 +372,11 @@ def main():
             time.sleep(2)
     
     # Close connections
-    snowflake.close()
+    try:
+        snowflake.close()
+        meta_client.close()
+    except:
+        pass
     
     # Final summary
     print("\n" + "="*80)
@@ -392,3 +411,24 @@ def main():
 if __name__ == "__main__":
     import sys
     sys.exit(main())
+
+
+        print(f"\nPerformance:")
+        print(f"  Total MAIDs uploaded: {total_maids:,}")
+        print(f"  Total processing time: {total_time:.2f}s")
+        print(f"  Average speed: {total_maids/total_time:,.0f} MAIDs/second")
+    
+    # Save final results
+    results_file = f'etl_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+    with open(results_file, 'w') as f:
+        json.dump(results, f, indent=2)
+    
+    print(f"\nResults saved to: {results_file}")
+    
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main())
+

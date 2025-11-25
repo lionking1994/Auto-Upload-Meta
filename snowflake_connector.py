@@ -282,13 +282,13 @@ class SnowflakeAudienceConnector:
             total_fetched = 0
             
             logger.info(f"Will fetch {total_count:,} MAIDs in chunks of {chunk_size:,} to avoid timeouts")
-            
+                
             # Use ORDER BY with LIMIT/OFFSET for consistent chunking
             query = """
             SELECT DISTINCT DEVICE_ID_VALUE as MAID
-            FROM GAMING.PUBLIC.KOCHAVA_GAMINGAUDIENCES_TBL
-            WHERE APP_NAME_PROPER = %s
-            ORDER BY DEVICE_ID_VALUE
+                FROM GAMING.PUBLIC.KOCHAVA_GAMINGAUDIENCES_TBL
+                WHERE APP_NAME_PROPER = %s
+                ORDER BY DEVICE_ID_VALUE
             LIMIT %s OFFSET %s
             """
             
@@ -315,7 +315,7 @@ class SnowflakeAudienceConnector:
                         current_batch.append({
                             'madid': row[0]
                         })
-                        
+                
                         # When batch is full, add it to batches list
                         if len(current_batch) >= batch_size:
                             batches.append(current_batch)
